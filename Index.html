@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="./PokedexLaunchX.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="divpoke"></div>
+    <input
+      class="impname"
+      type="text"
+      placeholder="Nombre de Pokemon"
+      id="pokeName"
+      name="pokeName"
+      value="pikachu"
+    /><br />
+    <b> <label for="nombre" id="nombre"></label></b>
+    <img
+      class="imgpoke"
+      src="./assets/Pokeball-PNG-Photos.png"
+      alt="pokemon"
+      width="200px"
+      id="pokeImg"
+    />
+    <div class="divestadistica">
+      <p><b> Estadísticas:</b></p>
+      <label for="estadistica" id="estadistica"></label><br />
+    </div>
+    <button onclick="fetchPokemon()" class="btncambiar">Cambiar Pokemon</button
+    ><br />
+
+    <div class="tipo">
+      <label for="tipo"> <b> Tipo:</b> </label>
+      <label for="tipopoke" id="tipopoke"></label>
+    </div>
+    <div class="movimientos">
+      <label for="movimientos"
+        ><p><b> Movimientos:</b></p></label
+      >
+      <label for="movimiento" id="movimiento"></label>
+    </div>
+  </body>
+  <footer>
+    <script src="./PokedexLaunchX.js"></script>
+  </footer>
+</html>
